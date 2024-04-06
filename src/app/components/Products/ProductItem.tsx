@@ -4,21 +4,28 @@ import Image from "next/image";
 import Button from "../Buttons/Button";
 import { url } from "../Gallery/Gallery";
 import useWindowWidth from "@/app/hooks/useWindowWidth";
+import { useRouter } from "next/navigation";
 interface Props {
   mobile: string;
   tablet: string;
   desktop: string;
   name: string;
+  slug:string;
+  category:string;
 }
 const ProductItem = (props: Props) => {
   const width = useWindowWidth();
+  const router=useRouter();
+  const { mobile, tablet, desktop, name,slug,category } = props;
 
-  const { mobile, tablet, desktop, name } = props;
+  console.log(name)
 
   const img = url(width, mobile, tablet, desktop);
 
   return (
-    <div className={styles.main}>
+    <div className={styles.main} onClick={()=>{
+      router.push(`/${category}/${slug}`)
+    }}>
       <div className={styles.imgContainer}>
         <Image
           src={img?.slice(1) || ""}

@@ -18,6 +18,8 @@ const AlsoLike = (props: Props) => {
             tablet={item.image.tablet}
             desktop={item.image.desktop}
             name={item.name}
+            slug={item.slug}
+            category={item.category}
           />
         ))}
       </div>
