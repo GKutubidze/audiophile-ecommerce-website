@@ -27,7 +27,7 @@ const Product = (props: Props) => {
       <div className={styles.product}>
         <p className={styles.name}>{name}</p>
         <p className={styles.shop} onClick={()=>{
-          router.push(name.toLocaleLowerCase())
+          router.push(`/${name.toLocaleLowerCase()}`)
           context.setIsOpen(false);
         }}>
           SHOP{" "}

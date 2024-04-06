@@ -38,7 +38,7 @@ const CartComponent = () => {
 
   if (context.isCartOpen && sum>0) {
     return (
-      <div className={styles.main}>
+      <div className={styles.main} style={{height:`${200+sum*100}px`}}>
         <div className={styles.content}>
           <p className={styles.cart}>{`CART (${sum})`}</p>
           <p className={styles.remove} onClick={handleRemove}>
