@@ -50,6 +50,7 @@
     text-align: center;
     letter-spacing: 1px;
     margin-top: 24px;
+    cursor: pointer;
     
  }
 
@@ -57,12 +58,12 @@
    .main{
       flex-direction: row;
       justify-content: center;
-      gap:100px;
+       gap:100px;
    }
    .img{
        
-      width: auto;
-      height: auto;
+      width: 410px;
+       height: auto;
    }
    .speaker{
       font-size: 56px;

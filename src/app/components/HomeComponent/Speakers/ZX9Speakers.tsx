@@ -5,6 +5,7 @@ import speakers from "../../../../../public/assets/home/mobile/image-speaker-zx9
 import spekersDesktop from "../../../../../public/assets/home/desktop/image-speaker-zx9.png";
 import useWindowWidth from "@/app/hooks/useWindowWidth";
 import Image from "next/image";
+import Link from "next/link";
 const ZX9Speakers = () => {
   const width = useWindowWidth();
   const desktop = width > 1024;
@@ -27,7 +28,11 @@ const ZX9Speakers = () => {
           truly remarkable sound.
         </p>
 
-        <button className={styles.button}>SEE PRODUCT</button>
+        <button className={styles.button}>
+          <Link href="/speakers/zx9-speaker" style={{all:"unset"}}>
+          SEE PRODUCT
+          </Link>
+         </button>
       </div>
     </div>
   );
