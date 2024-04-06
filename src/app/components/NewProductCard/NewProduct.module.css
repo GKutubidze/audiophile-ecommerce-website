@@ -1,0 +1,86 @@
+.main {
+    background-image: url("../../../../public/assets/home/mobile/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+     background-position: center center;
+}
+.overlay {
+    padding-top: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newProduct{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.49);
+    letter-spacing: 10px;
+ }
+
+ .headphones{
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+    font-weight: 700;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+ }
+
+ .content{
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    opacity: 0.75;
+    text-align: center;
+    padding: 0 24px;
+ }
+
+ .button{
+    all: unset;
+    margin-top: 28px;
+    background-color: var(--peru);
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    min-width: 160px;
+    min-height: 48px;
+    text-align: center;
+    cursor: pointer;
+ }
+
+
+ @media screen and (min-width: 768px) {
+    .main{
+        background-image: url("../../../../public/assets/home/tablet/image-header.jpg");
+        
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+   .main{
+       background-image: url("../../../../public/assets/home/desktop/image-hero.jpg");
+       
+   }
+
+   .overlay {
+    align-items: baseline;
+    width: 398px;
+    margin-left: 165px;
+    padding-top: 128px;
+   }
+
+   .content{
+    
+    text-align: justify;
+    padding: 0 ;
+ }
+ .headphones{
+     font-size: 56px;
+     line-height: 58px;
+    text-align: justify;
+ }
+
+ }

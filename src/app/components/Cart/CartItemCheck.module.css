@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 109px;
+    width: 100%;
+   }
+  .imgContainer {
+    display: flex;
+    gap: 16px;
+  }
+  .img {
+    border-radius: 8px;
+  }
+  .amount {
+     font-size: 15px;
+     font-weight: bold;
+     line-height: 25px;
+     opacity: 0.5;
+   }
+  
+  .button {
+    all: unset;
+    opacity: 0.25;
+    cursor: pointer;
+  }
+  .content{
+      display: flex;
+      flex-direction: column;
+      min-width: 45px;
+  
+  }
+  .name {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  
+  .price {
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  

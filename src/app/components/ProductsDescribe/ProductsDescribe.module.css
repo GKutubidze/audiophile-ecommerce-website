@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    gap: 120px;
+}
+
+.link{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

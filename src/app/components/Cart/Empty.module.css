@@ -1,0 +1,22 @@
+.main {
+    background-color: white;
+    min-width: 327px;
+    height: 300px;
+    z-index: 1000;
+    position: absolute;
+    top: 114px;
+    right:6.4%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+    
+}
+.title {
+margin-top: 2rem;
+}
+.img{
+    width: 100px;
+    height: auto;
+}

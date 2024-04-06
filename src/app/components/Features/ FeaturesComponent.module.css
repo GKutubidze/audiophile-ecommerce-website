@@ -1,0 +1,91 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 88px;
+  margin-top: 88px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 87.2%;
+}
+.includes {
+  width: 87.2%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+}
+
+.featuresContent {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.quantity {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+
+  color: var(--peru);
+}
+
+.item {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.box {
+  display: flex;
+  gap: 24px;
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .includes {
+    flex-direction: row;
+    gap: 170px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 160px;
+    gap: 125px;
+
+  }
+
+  .includes {
+    flex-direction: column;
+    gap: 32px;
+ 
+  }
+
+  .features {
+    gap: 32px;
+ 
+  }
+}

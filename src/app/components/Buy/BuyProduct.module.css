@@ -1,0 +1,112 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 87.2%;
+  gap: 24px;
+}
+.new {
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: var(--peru);
+}
+.name {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.back {
+  font-size: 15px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.img {
+  border-radius: 8px;
+}
+.description {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.price {
+  font-size: 18px;
+  letter-spacing: 1.29px;
+  font-weight: bold;
+}
+
+.addItem {
+  display: flex;
+  gap: 16px;
+}
+.amount {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 120px;
+  gap: 20px;
+  background-color: var(--anti-flash-white);
+}
+
+.button {
+  all: unset;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.content {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  width: 87.2%;
+}
+
+.link {
+  all: unset;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 31px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    width: 89%;
+    margin: 0 auto;
+  }
+  .img {
+    min-height: 480px;
+  }
+  .content {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .img {
+    min-height: 560px;
+    width: auto;
+  }
+  .main{
+    width: 77%;
+
+  }
+}

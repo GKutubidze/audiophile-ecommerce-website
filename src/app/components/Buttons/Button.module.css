@@ -1,0 +1,13 @@
+.button{
+    all: unset;
+    min-width: 160px;
+    min-height: 48px;
+    color: var(--white);
+    font-size: 13px;
+    background-color: var(--first-button-default);
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}

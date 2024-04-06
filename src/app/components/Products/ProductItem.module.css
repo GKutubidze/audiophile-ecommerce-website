@@ -1,0 +1,36 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+ }
+
+.imgContainer{
+    background-color: var(--anti-flash-white);
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    min-height: 120px;
+    width: 100%;
+}
+ 
+
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.71px;
+}
+
+.img{
+    width: 130px;
+    height: 130px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .img{
+        width: 223px;
+        height: 318px;
+    }
+  }

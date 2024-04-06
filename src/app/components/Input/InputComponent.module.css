@@ -1,0 +1,76 @@
+
+.main{
+    width: 87.2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0 23px;
+
+}
+
+.labelContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.header{
+    margin-top: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    letter-spacing: -0.21px;
+    font-weight: bold;
+}
+.label input{
+    all: unset;
+    border: 1px solid #CFCFCf;
+    border-radius: 8px;
+    min-height: 54px;
+    padding-left: 24px;
+
+ }
+.title{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 0.93px;
+    color: var(--peru);
+    text-transform: uppercase;
+}
+
+.radioContainer{
+
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    border-radius: 8px;
+    gap: 16px;
+    border: 1px solid #CFCFCf;
+    min-height: 56px;
+
+}
+
+.radioInput[type="radio"] {
+    width: 20px; /* Set width */
+    height: 20px; /* Set height */
+  }
+
+  .method{
+    font-size: 12px;
+    letter-spacing: -0.21px;
+    font-weight: bold;
+  }

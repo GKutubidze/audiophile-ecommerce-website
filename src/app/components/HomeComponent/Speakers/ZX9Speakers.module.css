@@ -1,0 +1,77 @@
+.main {
+  
+ 
+    background-image: url("../../../../../public/assets/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position:center ;
+    color: var(--white);
+    width: 87%;
+    min-height: 600px;
+    border-radius: 8px;
+    background-color: var(--peru);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+ .img{
+    margin-top: 55px;
+    width: 172px;
+    height: auto;
+ }
+
+ .speaker{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+ }
+
+ .content{
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    width: 280px;
+ }
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .button{
+    all: unset;
+    background-color: black;
+    min-width: 160px;
+    min-height: 48px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 24px;
+    
+ }
+
+ @media screen and (min-width: 1024px) {
+   .main{
+      flex-direction: row;
+      justify-content: center;
+      gap:100px;
+   }
+   .img{
+       
+      width: auto;
+      height: auto;
+   }
+   .speaker{
+      font-size: 56px;
+      
+   }
+   .content{
+       font-size: 15px;
+      
+   }
+  
+ }
+ 

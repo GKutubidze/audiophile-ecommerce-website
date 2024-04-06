@@ -1,0 +1,61 @@
+.main {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.imgContainer {
+  background-image: url("../../../../../public/assets/home/mobile/image-earphones-yx1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.content {
+  background-color: var(--anti-flash-white);
+  min-height: 200px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+.earphones {
+  margin-top: 41px;
+  margin-bottom: 32px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.button {
+  all: unset;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  width: 160px;
+  letter-spacing: 1px;
+  min-height: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    height: 320px;
+    flex-direction: row;
+    gap: 11px;
+  }
+  .imgContainer {
+    background-image: url("../../../../../public/assets/home/tablet/image-earphones-yx1.jpg");
+    height: 100%;
+    width: 50%;
+  }
+  .content {
+    width: 50%;
+  }
+
+  .earphones {
+    margin-top: 101px;
+  }
+}
