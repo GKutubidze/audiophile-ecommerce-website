@@ -55,16 +55,20 @@ export default function RootLayout({
     >
       <html lang="en">
       <body
-    style={
-      isCartOpen
-        ? {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-          }
-        : {}
-    }
+   
     className={manrope.className}
   >
-          {children}
+    <div  style={
+      isCartOpen
+        ? {
+            backgroundColor: "#191919",
+            filter:"blur(3.5px)"
+           }
+        : {}
+    }>
+    {children}
+
+    </div>
           {<CartComponent />}
         </body>
       </html>
