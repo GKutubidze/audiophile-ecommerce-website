@@ -7,6 +7,7 @@ import facebook from "../../../../public/assets/shared/desktop/icon-facebook.svg
 import twitter from "../../../../public/assets/shared/desktop/icon-twitter.svg";
 import instagram from "../../../../public/assets/shared/desktop/icon-instagram.svg";
 import Link from "next/link";
+import ImageComponent from "../ImageComponent/ImageComponent";
 
 const Footer = () => {
   return (
@@ -14,18 +15,13 @@ const Footer = () => {
       <div className={styles.content}>
         <Image src={logo} alt="" className={styles.img} />
         <ul className={styles.menu}>
-          <Link href="/" className={styles.link}>
-            HOME
-          </Link>
-          <Link href="/" className={styles.link}>
-            HEADPHONES
-          </Link>
-          <Link href="/" className={styles.link}>
-            SPEAKERS
-          </Link>
-          <Link href="/" className={styles.link}>
-            EARPHONES
-          </Link>
+          {Data.map((item, key) => {
+            return (
+              <Link key={key} href={item.path} className={styles.link}>
+                {item.page}
+              </Link>
+            );
+          })}
         </ul>
         <p className={styles.text}>
           Audiophile is an all in one stop to fulfill your audio needs. We;re a
@@ -38,9 +34,15 @@ const Footer = () => {
       <div className={styles.contact}>
         <p className={styles.copyright}>Copyright 2021. All Rights Reserved</p>
         <div className={styles.social}>
-          <Image src={facebook} alt="" />
-          <Image src={twitter} alt="" />
-          <Image src={instagram} alt="" />
+          <Link href="https://www.facebook.com/" target="_blank">
+            <Image src={facebook} alt="" />
+          </Link>
+          <Link href="https://twitter.com/" target="_blank">
+            <Image src={twitter} alt="" />
+          </Link>
+          <Link href="https://www.instagram.com/" target="_blank">
+            <Image src={instagram} alt="" />
+          </Link>
         </div>
       </div>
     </div>
@@ -48,3 +50,22 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const Data = [
+  {
+    page: "home",
+    path: "/",
+  },
+  {
+    page: "headphones",
+    path: "/headphones",
+  },
+  {
+    page: "speakers",
+    path: "/speakers",
+  },
+  {
+    page: "earphones",
+    path: "/earphones",
+  },
+];

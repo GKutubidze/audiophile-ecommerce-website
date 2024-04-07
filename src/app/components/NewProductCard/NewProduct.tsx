@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./NewProduct.module.css";
+import Link from "next/link";
  const NewProduct = () => {
   return (
      <div className={styles.main}>
@@ -14,7 +15,11 @@ import styles from "./NewProduct.module.css";
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>
-        <button className={styles.button}>SEE PRODUCT</button>
+        <button className={styles.button}>
+          <Link href="headphones/xx99-mark-two-headphones" style={{all:"unset"}}>
+          SEE PRODUCT
+          </Link>
+          </button>
       </div>
     </div>
    );

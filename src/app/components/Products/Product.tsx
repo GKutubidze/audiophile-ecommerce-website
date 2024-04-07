@@ -5,6 +5,7 @@ import Image from "next/image";
 import arrow from "../../../../public/assets/shared/desktop/icon-arrow-right.svg";
 import { useRouter } from "next/navigation";
 import { MyContext } from "@/app/layout";
+import ImageComponent from "../ImageComponent/ImageComponent";
 interface Props {
   name: string;
   img: string;
@@ -16,12 +17,11 @@ const Product = (props: Props) => {
   const { name, img } = props;
    return (
     <div className={styles.main}>
-      <Image
+      <ImageComponent
         src={`/${img}`} // Adjusted the src path
         alt=""
         className={styles.img}
-        width={1000}
-        height={1000}
+         
       />
 
       <div className={styles.product}>
