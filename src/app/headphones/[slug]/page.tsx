@@ -20,7 +20,9 @@ const Page = () => {
     (item) =>
       item.slug !== lastPart &&
       item.slug != "yx1-earphones" &&
-      item.slug!="zx9-speaker"
+      item.slug!="zx9-speaker" && 
+      item.slug!="zx7-speaker"
+
   );
 
   if (data) {
